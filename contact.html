@@ -39,7 +39,7 @@
         <p>サイトに対してのご要望やお問い合わせなど御座いましたら、こちらからご連絡お願い致します。</p>
           <div class="contact">
 
-              <form action="">
+              <form action="https://api.staticforms.xyz/submit" method="post">
                   <table class="contact-table">
 
                       <tr>
@@ -57,12 +57,12 @@
                           </td>
                       </tr>
 
-                      <tr>
+                      <!--<tr>
                           <th class="contact-item">電話</th>
                           <td class="contact-body">
                               <input type="tel" name="電話" class="form-text" />
                           </td>
-                      </tr>
+                      </tr>-->
 
 
                       <tr>
@@ -73,9 +73,20 @@
                       </tr>
 
                   </table>
+
+                  <input type="text" name="honeypot" style="display:none">
+                  <input type="hidden" name="accessKey" value="d33701e8-effa-4576-8a27-348ab5cbb1aa">
+                  <input type="hidden" name="subject" value="HIPHOPサイトお問い合わせ" />
+                  <input type="hidden" name="replyTo" value="dqdmp0711@gmail.com">
+                  <input type="hidden" name="redirectTo" value="https://muneguchikokoro.github.io/hiphop/thanks.html">
                   <input class="contact-submit" type="submit" value="送信" />
+
               </form>
           </div>
+
+    </form>
+
+
       </body>
     </main>
 
