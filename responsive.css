@@ -27,8 +27,24 @@ header h1 {
   height:100%;
 }
 
+main h1 {
+  font-size:30px;
+}
 
+iframe {
+  width:100%;
+}
 
+.MVbox p {
+margin:0px;
+
+}
+
+.newslist_wrapper {
+  width:auto;
+  margin: 0px;
+  margin-bottom:90px;
+}
 
 }
 
