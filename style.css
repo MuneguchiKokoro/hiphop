@@ -1,0 +1,152 @@
+
+@charset "UTF-8";
+
+html {
+  font-size:62.5%;
+}
+body {
+  font-size:1.4rem;
+}
+*, *::before, *::after {
+  box-sizing:border-box;
+}
+.clearfix::after {
+  content:'';
+  display:block;
+  clear:both;
+}
+
+
+header {
+	background-color: black;
+	overflow:hidden
+
+}
+
+header img {
+	float:left;
+	width: 90px;
+	margin:15px 15px;
+}
+
+header h1 {
+	float:left;
+	margin:35px 20px 10px 0px;
+	color:white;
+	font-size: 35px;
+}
+
+
+/* ナビゲーション */
+.gnav{
+    width: 100%;
+    background-color: #333;
+}
+.gnav_wrapper{
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+		list-style: none;
+}
+.gnav_wrapper li{
+    border-left: #888 1px solid;
+    text-align: center;
+    width: calc(100%/7);
+    transition: all  0.3s ease;
+}
+.gnav_wrapper li:last-child{
+    border-right: #888 1px solid;
+}
+.gnav_wrapper li:hover{
+    background-color: #888;
+}
+.gnav_wrapper li a{
+    display: block;
+    padding: 1.3em 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.haikei {
+	padding: 180px 0 100px 0;
+  background-image: url(3c7a2875-118334815_431646044473766_1677746821922392090_n.jpeg);
+  background-size: cover;
+	height: 720px;
+  color:white;
+  text-align: center;
+}
+
+.top-message{
+	font-family:serif;
+	font-size: 60px;
+	margin-top:200px;
+	text-shadow: 1px 2px 3px black;
+
+}
+
+main {
+	background-color: white;
+	text-align: center;
+}
+
+main h1 {
+  margin:90px 0px;
+  font-size:40px;
+}
+
+.MVbox {
+  margin: 90px 0px;
+}
+
+.setumei {
+  margin: 50px 0px;
+}
+
+/*ニュース一覧*/
+.newslist_wrapper {
+  background-color:;
+  /*width: 600px;*/
+  height:229px;
+  width:auto;
+  margin:60px;
+  border: 1px solid #d0d0d0;
+}
+
+.newslist {
+
+}
+
+
+.newslist ul {
+  overflow: scroll;
+  /*width: 595px;*/
+  width:auto;
+  height: 160px;
+  list-style: none;
+}
+
+
+.newslist ul li {
+  text-align: left;
+  border-bottom: 1px dotted #d0d0d0;
+  line-height: 32px;
+}
+
+
+.newslist ul li span {
+  color:#b5b3b3;
+  margin-right:15px;
+}
+
+
+footer {
+	background-color: black;
+	border-top: solid 1px #eee;
+	height:120px;
+	color:white;
+	font-size:15px;
+	padding-top:30px;
+	padding:20px;
+}

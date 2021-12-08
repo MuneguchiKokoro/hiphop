@@ -1,0 +1,230 @@
+
+@charset "UTF-8";
+
+html {
+  font-size:62.5%;
+}
+body {
+  font-size:1.4rem;
+}
+*, *::before, *::after {
+  box-sizing:border-box;
+}
+.clearfix::after {
+  content:'';
+  display:block;
+  clear:both;
+}
+
+
+header {
+	background-color: black;
+	overflow:hidden
+
+}
+
+header img {
+	float:left;
+	width: 90px;
+	margin:15px 15px;
+}
+
+header h1 {
+	float:left;
+	margin:35px 20px 10px 0px;
+	color:white;
+	font-size: 35px;
+}
+
+
+/* ナビゲーション */
+.gnav{
+    width: 100%;
+    background-color: #333;
+}
+.gnav_wrapper{
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+		list-style: none;
+}
+.gnav_wrapper li{
+    border-left: #888 1px solid;
+    text-align: center;
+    width: calc(100%/7);
+    transition: all  0.3s ease;
+}
+.gnav_wrapper li:last-child{
+    border-right: #888 1px solid;
+}
+.gnav_wrapper li:hover{
+    background-color: #888;
+}
+.gnav_wrapper li a{
+    display: block;
+    padding: 1.3em 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.haikei {
+	/*padding: 180px 0 100px 0;*/
+  background-image: url(rappers-picture/b8cb9e402a180f8af482a3d033aec3fe.jpeg);
+  background-size:cover;
+	height:700px;
+  color:white;
+  text-align: center;
+}
+
+
+.haikei2 {
+	/*padding: 180px 0 100px 0;*/
+  background-image: url(rappers-picture/IMG_2435.png);
+  background-size:cover;
+	height:700px;
+  color:white;
+  text-align: center;
+}
+
+.haikei3 {
+	/*padding: 180px 0 100px 0;*/
+  background-image: url(rappers-picture/zorn_art202108.webp);
+  background-size:cover;
+	height:700px;
+  color:white;
+  text-align: center;*/
+}
+
+
+.haikei4 {
+	/*padding: 180px 0 100px 0;*/
+  background-image: url(rappers-picture/a0a115652a0f7226e88267fa2f109374.png);
+  background-size:cover;
+	height:700px;
+  color:white;
+  text-align: center;*/
+}
+
+
+.haikei5 {
+	/*padding: 180px 0 100px 0;*/
+  background-image: url(rappers-picture/mainimg190308.jpeg);
+  background-size:cover;
+  height: 450px;
+  color:white;
+  text-align: center;*/
+}
+
+.haikei6 {
+	/*padding: 180px 0 100px 0;*/
+  background-image: url(rappers-picture/image3-10.jpeg);
+  background-size:cover;
+  height: 500px;
+  color:white;
+  text-align: center;*/
+}
+
+.haikei7 {
+	/*padding: 180px 0 100px 0;*/
+  background-image: url(rappers-picture/unnamed.jpeg);
+  background-size:cover;
+  height: 500px;
+  color:white;
+  text-align: center;*/
+}
+
+
+.haikei8 {
+	/*padding: 180px 0 100px 0;*/
+  background-image: url(rappers-picture/R1001211.jpeg);
+  background-size:cover;
+  height: 500px;
+  color:white;
+  text-align: center;*/
+}
+
+.top-message{
+  margin: 40px;
+	font-size: 30px;
+  text-align: center;
+
+}
+
+main {
+	background-color: white;
+	text-align: center;
+}
+
+main h1 {
+  margin:40px 0px;
+  font-size:40px;
+}
+
+
+/*rapperssyoukai-wrapper*/
+.rapperssyoukai-wrapper {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+#rappers-list {
+  /*width: 500px;*/
+  width:700px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+/*アコーディオン追加 */
+.rappers-list-item {
+  margin:10px;
+  border-bottom:1px solid #ccc;
+  position:relative;
+  cursor:pointer;
+  text-align: left;
+}
+
+.rappers-list-item h3 {
+  font-size: 20px;
+}
+
+.rappers-list-item span {
+  position:absolute;
+  top:0;
+  right:5px;
+  color:#ccc;
+  font-size:13px;
+}
+
+.syousai {
+  font-size: 12px;
+  display: none;
+  padding: 5px 0px;
+  margin-bottom: 15px;
+}
+
+
+footer {
+	background-color: black;
+	border-top: solid 1px #eee;
+	height:120px;
+	color:white;
+	font-size:15px;
+	padding-top:30px;
+	padding:20px;
+}
+
+.MVbox{
+  margin: 60px 0px;
+  text-align: center;
+}
+
+.MVbox h2 {
+  text-align: left;
+}
+
+.rappers-syoukai {
+  text-align: center;
+}
