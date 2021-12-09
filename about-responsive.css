@@ -23,27 +23,19 @@ header h1 {
 }
 
 .haikei {
-  width:100%;
-  height:100%;
-}
-
-main h1 {
-  font-size:30px;
-}
-
-iframe {
-  width:100%;
-}
-
-.MVbox p {
-margin:0px;
 
 }
 
-.newslist_wrapper {
-  width:auto;
+.top-message {
   margin: 0px;
-  margin-bottom:90px;
+}
+
+.submessage{
+  font-size:20px;
+}
+
+.submessage br{
+  display: none;
 }
 
 }
@@ -53,3 +45,4 @@ margin:0px;
 @media all and (max-width: 1000px) {
 
 }
+
