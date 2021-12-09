@@ -23,7 +23,7 @@ header h1 {
 }
 
 #over_layer img {
-  height:250px;
+  height:250px!important;
   margin-left:138px;
 }
 
