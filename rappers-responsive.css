@@ -22,10 +22,55 @@ header h1 {
   margin-bottom:30px;
 }
 
+
 .haikei {
-  width:100%;
-  height:100%;
+  width:auto;
+  height:450px;
 }
+
+.haikei2 {
+  width:auto;
+  height:350px;
+}
+
+.haikei3 {
+  width:auto;
+  height:350px;
+}
+
+.haikei4 {
+  width:auto;
+  height:350px;
+}
+
+.haikei5 {
+  width:auto;
+  height:220px;
+}
+
+.haikei6 {
+  width:auto;
+  height:350px;
+}
+
+.haikei7 {
+  width:auto;
+  height:240px;
+}
+
+
+.haikei8 {
+  width:auto;
+  height:250px;
+}
+
+#rappers-list {
+  /*width: 500px;*/
+  width:auto;
+  list-style: none;
+}
+
+
 
 main h1 {
   font-size:30px;
@@ -40,11 +85,6 @@ margin:0px;
 
 }
 
-.newslist_wrapper {
-  width:auto;
-  margin: 0px;
-  margin-bottom:90px;
-}
 
 }
 
@@ -53,3 +93,4 @@ margin:0px;
 @media all and (max-width: 1000px) {
 
 }
+
