@@ -283,3 +283,12 @@ nav.globalMenuSp.active {
   display: block;
 
 }
+
+
+.must_need{
+  margin-left :40px;
+  font-size: 12px;
+  padding: 4px 8px 3px;
+  color: #fff;
+  background-color: #ee6557;
+}
