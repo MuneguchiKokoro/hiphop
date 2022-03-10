@@ -39,17 +39,17 @@
       </ul>
     </nav>
 
-		<nav class="gnav">
-		    <ul class="gnav_wrapper">
-		        <li><a href="index.html">ホーム</a></li>
-		        <li><a href="about.html">このサイトについて</a></li>
-		        <li><a href="me.html">管理人について</a></li>
-		        <li><a href="rappers.html">RAPPERS</a></li>
-		        <li><a href="garally.html">GARALLY</a></li>
-		        <li><a href="blog.html">BLOG</a></li>
-		        <li><a href="contact.html">CONTACT</a></li>
-		    </ul>
-		</nav>
+	<nav class="gnav">
+	    <ul class="gnav_wrapper">
+		    <li><a href="index.html">ホーム</a></li>
+		    <li><a href="about.html">このサイトについて</a></li>
+		    <li><a href="me.html">管理人について</a></li>
+		    <li><a href="rappers.html">RAPPERS</a></li>
+		    <li><a href="garally.html">GARALLY</a></li>
+		    <li><a href="blog.html">BLOG</a></li>
+		    <li><a href="contact.html">CONTACT</a></li>
+		</ul>
+	</nav>
 
 
 
@@ -65,7 +65,14 @@
                   <table class="contact-table">
 
                       <tr>
-                          <th class="contact-item">名前</th>
+                          <th class="contact-item">お名前<span class="must_need">必須</span></th> 
+                          <td class="contact-body">
+                              <input type="text" name="name" class="form-text" />
+                          </td>
+                      </tr>
+
+                      <tr>
+                          <th class="contact-item">フリガナ</th>
                           <td class="contact-body">
                               <input type="text" name="name" class="form-text" />
                           </td>
@@ -73,22 +80,22 @@
 
 
                       <tr>
-                          <th class="contact-item">メール</th>
+                          <th class="contact-item">メール<span class="must_need">必須</span></th>
                           <td class="contact-body">
                               <input type="email" name="email" class="form-text" />
                           </td>
                       </tr>
 
-                      <!--<tr>
-                          <th class="contact-item">電話</th>
+                      <tr>
+                          <th class="contact-item">電話番号</th>
                           <td class="contact-body">
                               <input type="tel" name="phone" class="form-text" />
                           </td>
-                      </tr>-->
+                      </tr>
 
 
                       <tr>
-                          <th class="contact-item">お問い合わせ内容</th>
+                          <th class="contact-item">お問い合わせ内容<span class="must_need">必須</span></th>
                           <td class="contact-body">
                               <textarea name="message" class="form-textarea"></textarea>
                           </td>
@@ -112,9 +119,8 @@
       </body>
     </main>
 
-    <!-- フッター -->
     <footer>
-        <p>copyright ©️ 2021 Muneguchi Kokoro</p>
+        <p>copyright ©️ 2022 Muneguchi Kokoro</p>
     </footer>
     <script src="contact-script.js"></script>
 </body>
