@@ -36,6 +36,11 @@ main h1 {
     margin: 0 auto;
     padding: 60px 0;
 }
+ 
+ .must_need{
+  margin-left :0px;
+  display: inline-block;
+}
 
 }
 
