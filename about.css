@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 
 *{
@@ -7,16 +6,13 @@
   padding: 0px;
 }
 
-html {
-  font-size:62.5%;
-}
+html {font-size:62.5%;}
 body {
   font-size:1.4rem;
   font-family: 'Oswald', Arial, sans-serif;
 }
-*, *::before, *::after {
-  box-sizing:border-box;
-}
+*, *::before, *::after {box-sizing:border-box;}
+
 .clearfix::after {
   content:'';
   display:block;
@@ -27,7 +23,6 @@ body {
 header {
 	background-color: black;
 	overflow:hidden
-
 }
 
 header img {
@@ -42,8 +37,6 @@ header h1 {
 	color:white;
 	font-size: 50px;
 }
-
-
 
 /* ナビゲーション */
 .gnav{
@@ -62,12 +55,8 @@ header h1 {
     width: calc(100%/7);
     transition: all  0.3s ease;
 }
-.gnav_wrapper li:last-child{
-    border-right: #888 1px solid;
-}
-.gnav_wrapper li:hover{
-    background-color: #888;
-}
+.gnav_wrapper li:last-child{border-right: #888 1px solid;}
+.gnav_wrapper li:hover{background-color: #888;}
 .gnav_wrapper li a{
     display: block;
     padding: 1.3em 0;
@@ -79,7 +68,7 @@ header h1 {
 
 .haikei {
 	padding: 200px;
-  background-image: url(akiba08.jpg);
+  background-image: url(emiliano-vittoriosi-720679-unsplash-1024x680.jpeg);
   background-size: cover;
   color:white;
   text-align: center;
@@ -87,16 +76,10 @@ header h1 {
 
 .top-message{
   font-size: 30px;
-	text-shadow: 2px 3px 4px black;
-
-
-}
-
-.submessage{
   text-shadow: 2px 3px 4px black;
-  
-
 }
+
+.submessage{text-shadow: 2px 3px 4px black;}
 
 main {
 	background-color: white;
@@ -113,7 +96,7 @@ footer {
 	padding:20px;
 }
 
-/*　ハンバーガーボタン　*/
+
 .hamburger {
   display : block;
   position: fixed;
@@ -185,14 +168,8 @@ nav.globalMenuSp ul li {
   transition: .4s all;
 }
 
-nav.globalMenuSp ul li:last-child {
-  padding-bottom: 0;
-}
-
-nav.globalMenuSp ul li:hover{
-  background :#ddd;
-}
-
+nav.globalMenuSp ul li:last-child {padding-bottom: 0;}
+nav.globalMenuSp ul li:hover{background :#ddd;}
 nav.globalMenuSp ul li a {
   display: block;
   color: #fff;
@@ -222,13 +199,11 @@ header img {
   margin-top:20px;
 }
 
-header h1 {font-size:30px;}
-.haikei{padding: 150px 0px;}
+header h1 {font-size:35px;}
+.haikei{padding: 150px 0px;
+background-image: url(syukusyou.png);
+}
 .top-message {margin: 0px;}
 .submessage{font-size:20px;}
 .submessage br{display: none;}
-
 }
-
-
-
