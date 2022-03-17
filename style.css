@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://fonts.googleapis.com/css?family=Quattrocento);
 
@@ -88,13 +89,6 @@ header h1 {
   text-align: center;
 }
 
-.top-message{
-	font-family:serif;
-	font-size: 60px;
-	margin-top:200px;
-	text-shadow: 1px 2px 3px black;
-}
-
 main {
 	background-color: white;
 	text-align: center;
@@ -102,7 +96,7 @@ main {
 
 
 .MIX_title{
-  margin: 90px 10px 0px 0px;
+  margin: 150px 10px 0px 0px;
   font-size: 35px;
 }
 
@@ -115,21 +109,48 @@ main {
   font-size: 40px
 }
 
+.fa-music{
+  margin-right: 10px;
+  font-size: 40px 
+}
+
 .explain{
   margin: 10px;
   color: #888;
 }
 
-.setumei {
-  margin: 50px 10px;
-  font-family: 'Quattrocento', Arial, sans-serif;
+.background-color{
+  background-color: #F8F8FA;
 }
 
-/*ニュース一覧*/
+.RECOMMEND{
+  margin-bottom: 120px;
+}
+
+
+.RECOMMEND_title{
+  margin: 100px 10px 0px 0px;
+  font-size: 35px;
+}
+
+.gradient-top {
+  height: 15px;
+  background: -moz-linear-gradient(bottom, #F8F8FA, #FFF);
+  background: -webkit-linear-gradient(bottom, #F8F8FA, #FFF);
+  background: linear-gradient(to top, #F8F8FA, #FFF);
+}
+
+.gradient {
+  height: 15px;
+  background: -moz-linear-gradient(top, #F8F8FA, #FFF);
+  background: -webkit-linear-gradient(top, #F8F8FA, #FFF);
+  background: linear-gradient(to bottom, #F8F8FA, #FFF);
+}
+
 .newslist_wrapper {
   height:229px;
   width:auto;
-  margin:60px;
+  margin:120px 60px 60px 60px;
   border: 1px solid #d0d0d0;
 }
 
@@ -284,7 +305,7 @@ iframe {
 
 .newslist_wrapper {
   width:auto;
-  margin: 0px 20px;
+  margin: 120px 0px 20px 20px;
   margin-bottom:90px;
 }
 }
