@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://fonts.googleapis.com/css?family=Quattrocento);
 
+
 *{
   margin: 0px;
   padding: 0px;
@@ -20,6 +21,7 @@ body {
   display:block;
   clear:both;
 }
+
 
 header {
 	background-color: black;
@@ -98,13 +100,25 @@ main {
 	text-align: center;
 }
 
-main h1 {
-  margin:90px 0px;
-  font-size:40px;
+
+.MIX_title{
+  margin: 90px 10px 0px 0px;
+  font-size: 35px;
 }
 
-.MVbox {margin: 90px 0px;}
-iframe {margin-top: 20px;}
+.MIX_BOX{
+  margin-bottom: 200px;
+}
+
+.fa-headphones{
+  margin-right: 10px;
+  font-size: 40px
+}
+
+.explain{
+  margin: 10px;
+  color: #888;
+}
 
 .setumei {
   margin: 50px 10px;
@@ -258,8 +272,12 @@ header h1 {font-size:30px;}
 main h1 {font-size:30px;}
 
 iframe {
-  margin-top: 10px;
-  width:95%;
+  height: 400px;
+  width: 95%;
+}
+
+.MIX_BOX{
+  margin-bottom: 100px;
 }
 
 .setumei {margin: 10px 20px;}
