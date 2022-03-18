@@ -68,6 +68,11 @@ header h1 {
     margin: 40px 0px;
 }
 
+.blog_icon{
+  width: 60px;
+  margin-right: 5px;
+}
+
 .BLOG{
     font-size: 50px;
     text-align: center;
