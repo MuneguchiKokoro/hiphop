@@ -12,9 +12,7 @@ body {
   font-family: 'Oswald', Arial, sans-serif;
 }
 
-*, *::before, *::after {
-  box-sizing:border-box;
-}
+*, *::before, *::after {box-sizing:border-box;}
 
 .clearfix::after {
   content:'';
@@ -22,11 +20,9 @@ body {
   clear:both;
 }
 
-
 header {
 	background-color: black;
 	overflow:hidden
-
 }
 
 header img {
@@ -42,8 +38,6 @@ header h1 {
 	font-size: 50px;
 }
 
-
-/* ナビゲーション */
 .gnav{
     width: 100%;
     background-color: #333;
@@ -52,7 +46,7 @@ header h1 {
     max-width: 980px;
     margin: auto;
     display: flex;
-		list-style: none;
+	list-style: none;
 }
 .gnav_wrapper li{
     border-left: #888 1px solid;
@@ -69,14 +63,16 @@ header h1 {
     text-decoration: none;
 }
 
-main {text-align: center;}
-
-.BLOG {
-  margin:40px 0px;
-  font-size:50px;
+.BLOG-wrapper{
+    text-align: center;
+    margin: 40px 0px;
 }
 
-.article{margin-bottom: 90px;}
+.BLOG{font-size: 50px;}
+.article{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
 
 footer {
 	background-color: black;
@@ -161,6 +157,7 @@ nav.globalMenuSp ul li {
 
 nav.globalMenuSp ul li:last-child {padding-bottom: 0;}
 nav.globalMenuSp ul li:hover{background :#ddd;}
+
 nav.globalMenuSp ul li a {
   display: block;
   color: #fff;
@@ -174,14 +171,13 @@ nav.globalMenuSp.active {display: block;}
 /* スマホ向けレイアウト */
 @media all and (max-width: 670px) {
 
- .gnav {display: none;}
- .hamburger {display: block;}
+.gnav {display: none;}
+.hamburger {display: block;}
+
 header img {
   width:15%;
   height:15%;
   margin-top:20px;
 }
-
 header h1 {font-size:30px;}
-main h1 {font-size:30px;}
 }
