@@ -146,10 +146,11 @@ main {
   background: linear-gradient(to bottom, #F8F8FA, #FFF);
 }
 
+
 .newslist_wrapper {
   height:229px;
   width:auto;
-  margin:120px 60px 60px 60px;
+  margin:120px 40px;
   border: 1px solid #d0d0d0;
 }
 
