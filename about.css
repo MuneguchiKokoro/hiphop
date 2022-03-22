@@ -157,7 +157,7 @@ header h1 {
 
 .haikei {
 	padding: 200px;
-  background-image: url(emiliano-vittoriosi-720679-unsplash-1024x680.jpeg);
+  background-image: url(about.jpeg);
   background-size: cover;
   color:white;
   text-align: center;
@@ -313,3 +313,4 @@ background-image: url(min.png);
 .submessage{font-size:20px;}
 .submessage br{display: none;}
 }
+
