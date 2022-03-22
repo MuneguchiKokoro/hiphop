@@ -20,9 +20,98 @@ body {
 }
 
 
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  z-index: 1;
+}
+
+.sk-cube-grid {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #fff;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        display: none;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+
 header {
 	background-color: black;
 	overflow:hidden
+
 }
 
 header img {
@@ -76,10 +165,16 @@ header h1 {
 
 .top-message{
   font-size: 30px;
-  text-shadow: 2px 3px 4px black;
+	text-shadow: 2px 3px 4px black;
+
+
 }
 
-.submessage{text-shadow: 2px 3px 4px black;}
+.submessage{
+  text-shadow: 2px 3px 4px black;
+  
+
+}
 
 main {
 	background-color: white;
@@ -96,7 +191,7 @@ footer {
 	padding:20px;
 }
 
-
+/*　ハンバーガーボタン　*/
 .hamburger {
   display : block;
   position: fixed;
@@ -168,8 +263,14 @@ nav.globalMenuSp ul li {
   transition: .4s all;
 }
 
-nav.globalMenuSp ul li:last-child {padding-bottom: 0;}
-nav.globalMenuSp ul li:hover{background :#ddd;}
+nav.globalMenuSp ul li:last-child {
+  padding-bottom: 0;
+}
+
+nav.globalMenuSp ul li:hover{
+  background :#ddd;
+}
+
 nav.globalMenuSp ul li a {
   display: block;
   color: #fff;
@@ -189,6 +290,11 @@ nav.globalMenuSp.active {display: block;}
 
 /* スマホ向けレイアウト */
 @media all and (max-width: 670px) {
+
+  .sk-cube-grid {
+  width: 60px;
+  height: 60px;
+}
 
  .gnav {display: none;}
  .hamburger {display: block;}
