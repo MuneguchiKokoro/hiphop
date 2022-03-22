@@ -1,300 +1,133 @@
-@charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Oswald);
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>HIPHOP曲情報サイト</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/e5b586f23b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
 
-*{
-  margin: 0px;
-  padding: 0px;
-}
+<body>
 
-html {font-size:62.5%;}
-body {
-  font-size:1.4rem;
-  font-family: 'Oswald', Arial, sans-serif;
-}
+    <div id="loader-bg">
+        <div id="loader">
+        <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+        </div>
+        </div>
+    </div>
 
-*, *::before, *::after {box-sizing:border-box;}
+<div id="wrap">
+    <header>
+		<img src="imgbin_phonograph-record-decal-city-boy-logo-disc-jockey-png.png">
+		<h1>MY FAVORITE SONGS</h1>
+    </header>
 
-.clearfix::after {
-  content:'';
-  display:block;
-  clear:both;
-}
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
-header {
-	background-color: black;
-	overflow:hidden
-}
+    <nav class="globalMenuSp">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT THIS SITE</a></li>
+        <li><a href="me.html">ABOUT ME</a></li>
+        <li><a href="rappers.html">RAPPERS</a></li>
+        <li><a href="garally.html">GARALLY</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
 
-header img {
-	float:left;
-	width: 90px;
-	margin:15px 15px;
-}
+	<nav class="gnav">
+	    <ul class="gnav_wrapper">
+		    <li><a href="index.html">HOME</a></li>
+		    <li><a href="about.html">ABOUT THIS SITE</a></li>
+		    <li><a href="me.html">ABOUT ME</a></li>
+		    <li><a href="rappers.html">RAPPERS</a></li>
+		    <li><a href="garally.html">GARALLY</a></li>
+		    <li><a href="blog.html">BLOG</a></li>
+		    <li><a href="contact.html">CONTACT</a></li>
+		</ul>
+	</nav>
 
-header h1 {
-	float:left;
-	margin:20px 20px 10px 0px;
-	color:white;
-	font-size: 50px;
-}
+    <main>
+      <h1 class="WORD"><i class="fa-solid fa-envelope"></i>CONTACT</h1>
+      <body>
+        <p class="article">サイトに対してのご要望やお問い合わせなど御座いましたら、こちらからご連絡お願い致します。</p>
+          <div class="contact">
 
+              <form action="https://api.staticforms.xyz/submit" method="post">
+                  <table class="contact-table">
 
-.gnav{
-    width: 100%;
-    background-color: #333;
-}
-.gnav_wrapper{
-    max-width: 980px;
-    margin: auto;
-    display: flex;
-		list-style: none;
-}
-.gnav_wrapper li{
-    border-left: #888 1px solid;
-    text-align: center;
-    width: calc(100%/7);
-    transition: all  0.3s ease;
-}
-.gnav_wrapper li:last-child{border-right: #888 1px solid;}
-.gnav_wrapper li:hover{background-color: #888;}
-.gnav_wrapper li a{
-    display: block;
-    padding: 1.3em 0;
-    color: #fff;
-    text-decoration: none;
-}
+                      <tr>
+                          <th class="contact-item">お名前<span class="must_need">必須</span></th> 
+                          <td class="contact-body">
+                              <input type="text" name="name" class="form-text" />
+                          </td>
+                      </tr>
 
-main h1 {
-  text-align: center;
-  margin:40px 0px;
-  font-size:40px;
-}
-
-.article {
-  text-align: center;
-  margin: 0px 20px;
-}
-
-.fa-envelope{
-  font-size: 50px;
-  margin-right: 10px;
-}
-
-.WORD{font-size: 40px;}
-
-.contact {
-    width: 960px;
-    margin: 0 auto;
-    padding: 60px 0;
-}
-
-.contact-ttl {
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.contact-table {
-    width: 100%;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-}
+                      <tr>
+                          <th class="contact-item">フリガナ</th>
+                          <td class="contact-body">
+                              <input type="text" name="name" class="form-text" />
+                          </td>
+                      </tr>
 
 
+                      <tr>
+                          <th class="contact-item">メール<span class="must_need">必須</span></th>
+                          <td class="contact-body">
+                              <input type="email" name="email" class="form-text" />
+                          </td>
+                      </tr>
 
-.contact-item,
-.contact-body {
-    padding: 20px;
-    border: 1px solid #ccc;
-}
-
-.contact-item {
-    text-align: left;
-    width: 30%;
-    background-color: #eee;
-}
-
-.contact-body {width: 70%;}
-
-.form-text {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    max-width: 400px;
-}
-
-.form-select {
-    width: 180px;
-    height: 40px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.form-textarea {
-    width: 100%;
-    padding: 10px;
-    height: 200px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-.contact-submit {
-    width: 250px;
-    background-color: #333;
-    color: #fff;
-    font-weight: bold;
-    display: block;
-    margin: 0 auto;
-    font-size: 16px;
-    padding: 15px;
-    border-radius: 100vh;
-    border: none;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    cursor: pointer;
-}
+                      <tr>
+                          <th class="contact-item">電話番号</th>
+                          <td class="contact-body">
+                              <input type="tel" name="phone" class="form-text" />
+                          </td>
+                      </tr>
 
 
-footer {
-	background-color: black;
-	border-top: solid 1px #eee;
-	height:120px;
-	color:white;
-	font-size:15px;
-	padding-top:30px;
-	padding:20px;
-}
+                      <tr>
+                          <th class="contact-item">お問い合わせ内容<span class="must_need">必須</span></th>
+                          <td class="contact-body">
+                              <textarea name="message" class="form-textarea"></textarea>
+                          </td>
+                      </tr>
 
-.hamburger {
-  display : block;
-  position: fixed;
-  z-index : 3;
-  right : 13px;
-  top   : 12px;
-  width : 42px;
-  height: 42px;
-  cursor: pointer;
-  text-align: center;
-  display:none;
-}
-.hamburger span {
-  display : block;
-  position: absolute;
-  width   : 30px;
-  height  : 2px ;
-  left    : 6px;
-  background : #555;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition   : 0.5s ease-in-out;
-  transition        : 0.5s ease-in-out;
-}
-.hamburger span:nth-child(1) {top: 10px;}
-.hamburger span:nth-child(2) {top: 20px;}
-.hamburger span:nth-child(3) {top: 30px;}
+                  </table>
 
-/* ナビ開いてる時のボタン */
-.hamburger.active span:nth-child(1) {
-  top : 16px;
-  left: 6px;
-  background : #fff;
-  -webkit-transform: rotate(315deg);
-  -moz-transform   : rotate(315deg);
-  transform        : rotate(315deg);
-}
+                  <input type="text" name="honeypot" style="display:none">
+                  <input type="hidden" name="accessKey" value="d33701e8-effa-4576-8a27-348ab5cbb1aa">
+                  <input type="hidden" name="subject" value="HIPHOPサイトお問い合わせ" />
+                  <input type="hidden" name="replyTo" value="dqdmp0711@gmail.com">
+                  <input type="hidden" name="redirectTo" value="https://muneguchikokoro.github.io/hiphop/thanks.html">
+                  <input class="contact-submit" type="submit" value="送信" />
 
-.hamburger.active span:nth-child(2),
-.hamburger.active span:nth-child(3) {
-  top: 16px;
-  background : #fff;
-  -webkit-transform: rotate(-315deg);
-  -moz-transform   : rotate(-315deg);
-  transform        : rotate(-315deg);
-}
+              </form>
+          </div>
 
-nav.globalMenuSp {
-  position: fixed;
-  z-index : 2;
-  top  : 0;
-  left : 0;
-  color: #fff;
-  background: rgba(0,0,0,0.7);
-  text-align: center;
-  width: 100%;
-  display: none;
-}
-
-nav.globalMenuSp ul {
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
-}
-
-nav.globalMenuSp ul li {
-  list-style-type: none;
-  padding: 0;
-  width: 100%;
-  transition: .4s all;
-}
-
-nav.globalMenuSp ul li:last-child {padding-bottom: 0;}
-nav.globalMenuSp ul li:hover{background :#ddd;}
-
-nav.globalMenuSp ul li a {
-  display: block;
-  color: #fff;
-  padding: 1em 0;
-  text-decoration :none;
-}
-
-/* このクラスを、jQueryで付与・削除する */
-nav.globalMenuSp.active {display: block;}
-
-.must_need{
-  margin-left :40px;
-  font-size: 12px;
-  padding: 4px 8px 3px;
-  color: #fff;
-  background-color: #ee6557;
-}
-
-/* スマホ向けレイアウト */
-@media all and (max-width: 670px) {
-
- .gnav {display: none;}
- .hamburger {display: block;}
-
-header img {
-  width:15%;
-  height:15%;
-  margin-top:20px;
-}
-
-header h1 {font-size:30px;}
-.haikei {
-  width:100%;
-  height:100%;
-}
-
-main h1 {font-size:30px;}
-
-.contact {
-    width: 100%;
-    margin: 0 auto;
-    padding: 60px 0;
-}
-
-.must_need{
-  margin-left :10px;
-  display: inline-block;
-}
-}
+    </form>
+      </body>
+    </main>
+    <footer>
+        <p>copyright ©️ 2022 Muneguchi Kokoro</p>
+    </footer>
+</div>
+    <script src="contact-script.js"></script>
+</body>
+</html>
