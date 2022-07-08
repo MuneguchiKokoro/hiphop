@@ -184,6 +184,16 @@ main {
 
 .MIX_BOX{margin-bottom: 200px;}
 
+.youtube{
+  display: block;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.Dubsetp-Mix{
+  margin-top: 110px;
+}
+
 .fa-headphones{
   margin-right: 10px;
   font-size: 40px
@@ -378,6 +388,12 @@ iframe {
 
 .MIX_BOX{margin-bottom: 100px;}
 .setumei {margin: 10px 20px;}
+
+.youtube{
+  width: 96%;
+  margin-right: 2%;
+  margin-left: 2%;
+}
 
 .newslist_wrapper {
   width:auto;
