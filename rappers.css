@@ -171,7 +171,7 @@ header h1 {
 }
 
 .haikei3 {
-  background-image: url(rappers-picture/zorn_art202108.webp);
+  background-image: url(rappers-picture/zorn.png);
   background-size:cover;
 	height:700px;
   color:white;
@@ -279,7 +279,11 @@ main h1 {
   margin-bottom: 15px;
 }
 
-.text{font-family: 'Quattrocento', Arial, sans-serif;}
+.text{
+  font-family: 'Quattrocento', Arial, sans-serif;
+  margin-top: 50px;
+  line-height: 24px;
+}
 
 footer {
 	background-color: black;
@@ -295,7 +299,11 @@ footer {
   margin: 60px 0px;
   text-align: center;
 }
-.MVbox h2 {text-align: left;}
+.MVbox h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .rappers-syoukai {
   text-align: center;
   margin-bottom: 50px;
