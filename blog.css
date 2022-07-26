@@ -126,6 +126,10 @@ header h1 {
 	font-size: 50px;
 }
 
+.sp{
+display:none;
+}
+
 .gnav{
     width: 100%;
     background-color: #333;
@@ -267,6 +271,9 @@ nav.globalMenuSp.active {display: block;}
 
 /* スマホ向けレイアウト */
 @media all and (max-width: 670px) {
+.sp{
+display:block;
+}
 
   .sk-cube-grid {
   width: 60px;
