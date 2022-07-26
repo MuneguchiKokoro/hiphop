@@ -407,5 +407,8 @@ nav.globalMenuSp.active {display: block;}
       width: 100%;
     }
 
+    .footer-sp{
+	    margin-top:0px;
+	  }
   }
   
