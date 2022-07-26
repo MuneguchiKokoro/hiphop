@@ -342,6 +342,22 @@ nav.globalMenuSp.active {display: block;}
     }
   }
   @media screen and (max-width: 694px) {
+     .sk-cube-grid {
+      width: 60px;
+      height: 60px;
+    }
+    
+     .gnav {display: none;}
+     .hamburger {display: block;}
+    
+    header img {
+      width:15%;
+      height:15%;
+      margin-top:20px;
+    }
+    
+    header h1 {font-size:30px;}
+
     .inner {
       width: 100%;
       padding-left: 14px;
