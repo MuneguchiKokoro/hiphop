@@ -42,3 +42,10 @@ $(function () {
   });
 
 });
+
+//新しいアコーディオン
+$(function () {
+    $('.ac-parent').on('click', function () {
+    $(this).next().slideToggle();
+  });
+});
