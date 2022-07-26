@@ -4,7 +4,8 @@ $(function() {
   $('#loader-bg ,#loader').height(h).css('display','block');
 });
   
-$(window).load(function () { //全ての読み込みが完了したら実行
+//全ての読み込みが完了したら実行ローダー
+$(window).load(function () { 
   $('#loader-bg').delay(900).fadeOut(800);
   $('#loader').delay(600).fadeOut(300);
   $('#wrap').css('display', 'block');
@@ -17,4 +18,11 @@ $('.hamburger').click(function () {
         } else {
             $('.globalMenuSp').removeClass('active');
     }
+});
+
+//新しいアコーディオン
+$(function () {
+    $('.ac-parent').on('click', function () {
+    $(this).next().slideToggle();
+  });
 });
