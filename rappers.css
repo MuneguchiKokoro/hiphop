@@ -278,13 +278,16 @@ nav.globalMenuSp.active {display: block;}
 
   .ac-child{
     margin-top: 50px;
-    margin-bottom: 100px;
     max-width: 1080px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
+  .mb{
+    margin-bottom: 100px;
+  }
+
   .text{
     line-height: 30px;
   }
@@ -341,6 +344,7 @@ nav.globalMenuSp.active {display: block;}
     display: none;
   }
 
+
   
   @media screen and (min-width: 751px) and (max-width: 1240px) {
     .inner {
@@ -350,7 +354,8 @@ nav.globalMenuSp.active {display: block;}
     }
   }
   @media screen and (max-width: 694px) {
-     .sk-cube-grid {
+
+    .sk-cube-grid {
       width: 60px;
       height: 60px;
     }
@@ -428,12 +433,12 @@ nav.globalMenuSp.active {display: block;}
     }
 
     .top-message{
-      margin-top: 10px;
       margin-bottom: 10px;
     }
 
     .rappers-syoukai{
       margin-bottom: 20px;
     }
+
   }
   
