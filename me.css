@@ -344,7 +344,13 @@ nav.globalMenuSp ul li a {
   padding: 1em 0;
   text-decoration :none;
 }
+.sp{
+  display: none;
+}
 
+.about_me{
+  line-height: 28px;
+}
 /* このクラスを、jQueryで付与・削除する */
 nav.globalMenuSp.active {display: block;}
 
@@ -380,4 +386,14 @@ header h1 {
 .submessage br {
   display:none;
 }
+.sp{
+  display: block;
+}
+
+}
+
+@media all and (max-width: 365px) {
+  .snip1376 figcaption {
+    padding: 0px;
+  }
 }
