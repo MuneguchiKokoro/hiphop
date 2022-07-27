@@ -333,6 +333,14 @@ nav.globalMenuSp.active {display: block;}
     left:30px;
   }
 
+  .gradation-top{
+    display: none;
+  }
+
+  .gradation{
+    display: none;
+  }
+
   
   @media screen and (min-width: 751px) and (max-width: 1240px) {
     .inner {
@@ -405,6 +413,27 @@ nav.globalMenuSp.active {display: block;}
 
     .youtube-sp{
       width: 100%;
+    }
+
+    .gradation-top{
+      height: 40px;
+      background: linear-gradient(rgb(232, 231, 231),#fff );
+      display: block;
+    }
+
+    .gradation{
+      height: 40px;
+      background: linear-gradient(#fff, rgb(232, 231, 231));
+      display: block;
+    }
+
+    .top-message{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .rappers-syoukai{
+      margin-bottom: 20px;
     }
   }
   
