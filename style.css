@@ -351,6 +351,10 @@ nav.globalMenuSp ul li a {
   text-decoration :none;
 }
 
+.sp{
+  display: none;
+}
+
 /* このクラスを、jQueryで付与・削除する */
 nav.globalMenuSp.active {display: block;}
 
@@ -397,7 +401,17 @@ iframe {
 
 .newslist_wrapper {
   width:auto;
-  margin-top: 120px;
+  margin-top: 60px;
   margin-bottom:90px;
+}
+
+.RECOMMEND_title {
+    margin-top: 40px;
+}
+.RECOMMEND {
+    margin-bottom: 40px;
+}
+.sp{
+  display: block;
 }
 }
