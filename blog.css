@@ -179,10 +179,13 @@ footer {
 	background-color: black;
 	border-top: solid 1px #eee;
 	height:120px;
+  width: 100%;
 	color:white;
 	font-size:15px;
 	padding-top:30px;
 	padding:20px;
+  position: absolute;/*←絶対位置*/
+  bottom: 0; /*下に固定*/
 }
 
 .hamburger {
