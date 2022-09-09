@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Oswald);
-@import url(https://fonts.googleapis.com/css?family=Quattrocento);
 
 *{
   margin: 0px;
@@ -11,7 +10,6 @@ html {font-size:62.5%;}
 body {
   font-size:1.4rem;
     font-family: 'Oswald', Arial, sans-serif;
-     /* font-family: 'Quattrocento', Arial, sans-serif; */
 }
 *, *::before, *::after {box-sizing:border-box;}
 
@@ -167,7 +165,6 @@ header h1 {
   background-image: url(./images/3c7a2875-118334815_431646044473766_1677746821922392090_n.jpeg);
   background-size: cover;
 	height: 720px;
-  color:white;
   text-align: center;
 }
 
@@ -176,28 +173,14 @@ main {
 	text-align: center;
 }
 
-
 .MIX_title{
   margin: 150px 10px 0px 0px;
   font-size: 35px;
 }
 
-.MIX_BOX{margin-bottom: 200px;}
-
-.youtube{
-  display: block;
-  margin: auto;
-  margin-bottom: 100px;
-}
-
-.Dubsetp-Mix{
-  margin-top: 110px;
-}
-
-.fa-headphones{
-  margin-right: 10px;
-  font-size: 40px
-}
+.MIX_BOX{margin-bottom: 120px;}
+.Dubsetp-Mix{margin-top: 110px;}
+.fa-headphones{margin-right: 10px;font-size: 40px;}
 
 .fa-music{
   margin-right: 10px;
@@ -343,7 +326,6 @@ nav.globalMenuSp ul li {
 
 nav.globalMenuSp ul li:last-child {padding-bottom: 0;}
 nav.globalMenuSp ul li:hover{background :#ddd;}
-
 nav.globalMenuSp ul li a {
   display: block;
   color: #fff;
@@ -351,21 +333,17 @@ nav.globalMenuSp ul li a {
   text-decoration :none;
 }
 
-.sp{
-  display: none;
-}
+.sp{display: none;}
 
 /* このクラスを、jQueryで付与・削除する */
 nav.globalMenuSp.active {display: block;}
 
-/* スマホ向けレイアウト */
 @media all and (max-width: 670px) {
 
 .sk-cube-grid {
   width: 60px;
   height: 60px;
 }
-
  .gnav {display: none;}
  .hamburger {display: block;}
 
@@ -391,13 +369,6 @@ iframe {
 }
 
 .MIX_BOX{margin-bottom: 100px;}
-.setumei {margin: 10px 20px;}
-
-.youtube{
-  width: 96%;
-  margin-right: 2%;
-  margin-left: 2%;
-}
 
 .newslist_wrapper {
   width:auto;
@@ -413,5 +384,51 @@ iframe {
 }
 .sp{
   display: block;
+}
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+.youtube{
+  width:fit-content;
+  margin:0 auto;
+  position: relative;
+}
+
+.arrow {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  background-color: rgba(255,255,255,.8); 
+}
+
+.youtube_wrapper iframe,.youtube_wrapper img {
+  width: 560px;
+  height: 351px;
+}
+
+.arrow,
+.arrow::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%,-50%);
+}
+.arrow::before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 8px 12px;
+  border-color: transparent transparent transparent #222;
+}
+
+@media all and (max-width: 670px) {
+.youtube_wrapper iframe,.youtube_wrapper img,.youtube {
+  width:100%;
 }
 }
