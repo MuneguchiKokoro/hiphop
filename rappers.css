@@ -344,6 +344,46 @@ nav.globalMenuSp.active {display: block;}
     display: none;
   }
 
+/* Youtube軽量化記述サムネ押した時に初めて動画読み込み */
+.youtube{
+  width:fit-content;
+  margin:0 auto;
+  position: relative;
+}
+
+.arrow {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  background-color: rgba(255,255,255,.8); 
+}
+
+.youtube_wrapper iframe,.youtube_wrapper img {
+  width: 560px;
+  height: 351px;
+}
+.arrow,
+.arrow::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%,-50%);
+}
+.arrow::before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 8px 12px;
+  border-color: transparent transparent transparent #222;
+}
+
+@media all and (max-width: 670px) {
+.youtube_wrapper iframe,.youtube_wrapper img,.youtube {
+  width:100%;
+}
+}
 
   
   @media screen and (min-width: 751px) and (max-width: 1240px) {
@@ -415,11 +455,6 @@ nav.globalMenuSp.active {display: block;}
       top: 250px;
       left: 20px;
     }
-
-    .youtube-sp{
-      width: 100%;
-    }
-
     .gradation-top{
       height: 40px;
       background: linear-gradient(rgb(232, 231, 231),#fff );
