@@ -38,3 +38,19 @@ $('.youtube').each(function() {
     $(this).after('<div class="youtube"><iframe src="https://www.youtube.com/embed/'+id+'?=loop=1&playlist='+id+'&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>').remove();
   });
 });
+
+$(function(){
+  $(window).scroll(function (){
+    $("#sample").each(function(){
+      var imgPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > imgPos - windowHeight + windowHeight / 3) {
+        $(this).addClass("fade_on");
+      } else {
+        $(this).removeClass("fade_on");
+      }
+    });
+  });
+});
+
