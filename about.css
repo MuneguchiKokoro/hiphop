@@ -153,14 +153,8 @@ header h1 {
     text-decoration: none;
 }
 
-
-
-.haikei {
-	padding: 200px;
-  background-image: url(./images/about.jpeg);
-  background-size: cover;
-  color:white;
-  text-align: center;
+video{
+    width: 100%;
 }
 
 .top-message{
@@ -172,13 +166,6 @@ header h1 {
 
 .submessage{
   text-shadow: 2px 3px 4px black;
-  
-
-}
-
-main {
-	background-color: white;
-	text-align: center;
 }
 
 footer {
@@ -278,17 +265,15 @@ nav.globalMenuSp ul li a {
   text-decoration :none;
 }
 
-/* このクラスを、jQueryで付与・削除する */
+
 nav.globalMenuSp.active {display: block;}
 
-/*タブレット向けレイアウト*/
 @media all and (max-width: 1000px) {
 .haikei{padding: 200px 0px;}
 .submessage{margin: 0px 30px;}
 .submessage{font-size:20px;}
 }
 
-/* スマホ向けレイアウト */
 @media all and (max-width: 670px) {
 
   .sk-cube-grid {
@@ -312,4 +297,70 @@ background-image: url(./images/min.png);
 .top-message {margin: 0px;}
 .submessage{font-size:20px;}
 .submessage br{display: none;}
+}
+
+#site_title{
+    position: relative;
+    height: 100vh;
+} 
+
+#video-area{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+}
+
+#video {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 177.77777778vh;
+    height: 56.25vw;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+ .About_this_site{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color:#fff;
+    text-shadow: 0 0 15px #666;
+}
+.sp{
+    display: none;
+}
+
+#container{
+  padding:300px 0;
+  text-align: center;
+}
+
+#container p{
+  padding:100px 0;
+  color: #fff;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  line-height: 40px;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0), #000000 20%, #000000 80%, rgba(0,0,0,0));
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0), #000000 20%, #000000 80%, rgba(0,0,0,0));
+  background: linear-gradient(to bottom, rgba(0,0,0,0), #000000 20%, #000000 80%, rgba(0,0,0,0));
+}
+
+@media all and (max-width: 670px) {
+.sp{
+    display: block;
+}
+#container p{
+  padding:80px 0;
+  font-size: 0.9em;
+  line-height: 30px;
+}
 }
