@@ -5,6 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
       <title>GOOD VIVES</title>
       <link rel="stylesheet" href="style.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <script src="https://kit.fontawesome.com/e5b586f23b.js" crossorigin="anonymous"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
@@ -65,7 +66,7 @@
             </div>
 
             <section class="MixsWrapper">
-              <section class="HiphopMix">
+              <section class="HiphopMix" data-aos="fade-up">
                 <h2 class="MIX_title"><i class="fa-solid fa-headphones"></i>HIPHOP MIX</h2>
                 <div class="explain">
                   <p>ここでは管理人のMixを試聴出来ます。</p>
@@ -76,31 +77,32 @@
                   <a href="https://soundcloud.com/enhdamp8dvvu" title="MK" target="_blank" style="color: #cccccc; text-decoration: none;">MK</a> · <a href="https://soundcloud.com/enhdamp8dvvu/japanese-hiphop-mix" title="Japanese Hiphop Mix" target="_blank" style="color: #cccccc; text-decoration: none;">Japanese Hiphop Mix</a>
                 </div>
               </section>
-              <section class="Dubsetp-Mix">
+              <section class="Dubsetp-Mix" data-aos="fade-up">
                 <h2 class="MIX_title"><i class="fa-solid fa-headphones"></i>BONUS MIX</h2>
                 <p class="explain">Hiphopではありませんが過去に管理人の作った<br>EDM・DubstepジャンルのMixが視聴出来ます。</p>
                 <div class="youtube_wrapper">
-                  <div class="youtube"><iframe data-src="https://www.youtube.com/embed/JGHlmd0329o" allowfullscreen></iframe><div class="arrow"></div></div>
-                  <div class="youtube"><iframe data-src="https://www.youtube.com/embed/om1zZoQRkn8" allowfullscreen></iframe><div class="arrow"></div></div>
+                  <div class="youtube" data-aos="fade-right" data-aos-duration="1000"><iframe data-src="https://www.youtube.com/embed/JGHlmd0329o" allowfullscreen></iframe><div class="arrow"></div></div>
+                  <div class="youtube" data-aos="fade-left" data-aos-duration="1000"><iframe data-src="https://www.youtube.com/embed/om1zZoQRkn8" allowfullscreen></iframe><div class="arrow"></div></div>
                 </div>
               </section>
             </section>
 
-            <div class="background-color">
-              <div class="gradient-top"></div>
-              <h2 class="RECOMMEND_title"><i class="fa-solid fa-music"></i>RECOMMEND</h2>
-              <div class="explain">
-                <p>ここでは最近リリースされた曲や<br class="sp">管理人おすすめの曲を紹介しています。</p>
-                <p>音が流れますのでご注意下さい。</p>
+            <section class="RecommendWrapper" data-aos="fade-up">
+              <div class="background-color">
+                <div class="gradient-top"></div>
+                <h2 class="RecommendTitle"><i class="fa-solid fa-music"></i>RECOMMEND</h2>
+                <div class="explain">
+                  <p>ここでは最近リリースされた曲や<br class="sp">管理人おすすめの曲を紹介しています。</p>
+                  <p>音が流れますのでご注意下さい。</p>
+                </div>
+                <div class="Recommend">
+                  <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/playlist/recommend/pl.u-BNA602Rt6KW6Dz"></iframe>
+                </div>
+                <div class="gradient"></div>
               </div>
+            </section>
 
-              <div class="RECOMMEND">
-                <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/playlist/recommend/pl.u-BNA602Rt6KW6Dz"></iframe>
-              </div>
-              <div class="gradient"></div>
-            </div>
-
-            <section class="news">
+            <section class="news" data-aos="fade-up">
               <div class="newslist_wrapper">
                 <div class="newslist">
                   <h2>NEWS</h2>
@@ -122,6 +124,7 @@
           </main>
           <footer><p>copyright ©️ 2022 DJ NULL</p></footer>
       </div>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script src="htmlscript.js"></script>
   </body>
 </html>
